@@ -1,5 +1,5 @@
 {
-  "name": "vup",
+  "name": "@droyer/vup",
   "version": "0.0.1",
   "description": "",
   "main": "dist/vup.ssr.js",
