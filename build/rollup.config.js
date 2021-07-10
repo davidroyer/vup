@@ -113,6 +113,9 @@ if (!argv.format || argv.format === 'es') {
       }),
     ],
   };
+
+  // console.log('esConfig', esConfig);
+
   buildFormats.push(esConfig);
 }
 
