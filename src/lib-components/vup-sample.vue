@@ -60,7 +60,7 @@ export default /*#__PURE__*/ defineComponent({
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="css">
 .vup-sample {
   display: block;
   margin: 25px auto;
