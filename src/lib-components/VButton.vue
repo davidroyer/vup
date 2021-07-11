@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style>
 .btn {
   @apply inline-flex justify-center items-center p-2 px-4 font-semibold rounded-lg shadow;
 }

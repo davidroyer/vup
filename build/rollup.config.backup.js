@@ -43,7 +43,9 @@ const baseConfig = {
     replace: {
       'process.env.NODE_ENV': JSON.stringify('production')
     },
-    vue: {},
+    vue: {
+      css: false
+    },
     postVue: [
       resolve({
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue']
@@ -56,7 +58,7 @@ const baseConfig = {
         include: /&module=.*\.css$/
       }),
       // Process all `<style>` blocks except `<style module>`.
-      PostCSS({ include: /(?<!&module=.*)\.css$/ }),
+      PostCSS({ include: /(?<!&module=.*)\.css$/, extract: true }),
       commonjs()
     ],
     babel: {

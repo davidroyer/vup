@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style>
 .v-block {
   @apply p-5 my-5 text-xl font-semibold bg-yellow-200;
 }
