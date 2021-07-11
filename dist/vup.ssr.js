@@ -228,9 +228,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_BeakerIcon = vue.resolveComponent("BeakerIcon");
 
   return vue.openBlock(), vue.createBlock("div", _hoisted_1, [vue.createVNode(_component_BeakerIcon, {
-    class: "w-5 h-5 text-blue-500"
+    class: "v-block-icon"
   }), _hoisted_2]);
-}var css_248z = ".v-block {\n  margin-top: 1.25rem;\n  margin-bottom: 1.25rem;\n  --tw-bg-opacity: 1;\n  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));\n  padding: 1.25rem;\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n  font-weight: 600;\n}\n";
+}var css_248z = ".v-block {\n  margin-top: 1.25rem;\n  margin-bottom: 1.25rem;\n  display: flex;\n  max-width: 32rem;\n  flex-direction: column;\n  align-items: center;\n  --tw-bg-opacity: 1;\n  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));\n  padding: 1.25rem;\n  font-size: 1.25rem;\n  line-height: 1.75rem;\n  font-weight: 600;\n}\n\n.v-block-icon {\n  height: 2.5rem;\n  width: 2.5rem;\n  --tw-text-opacity: 1;\n  color: rgba(99, 102, 241, var(--tw-text-opacity));\n}\n";
 styleInject(css_248z);script.render = render;var components$1=/*#__PURE__*/Object.freeze({__proto__:null,VupSample: script$2,VButton: script$1,VBlock: script});var install = function installVup(app) {
   Object.entries(components$1).forEach(function (_ref) {
     var _ref2 = _slicedToArray(_ref, 2),
