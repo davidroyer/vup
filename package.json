@@ -23,7 +23,7 @@
   },
   "standard-version": {
     "scripts": {
-      "postbump": "npm run build && git add dist && git commit -m 'chore: new build'"
+      "postchangelog": "npm run build && git add dist && git commit -m 'chore: new build'"
     }
   },
   "dependencies": {
