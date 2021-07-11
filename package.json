@@ -1,6 +1,6 @@
 {
   "name": "@droyer/vup",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/vup.ssr.js",
   "browser": "dist/vup.esm.js",
@@ -20,6 +20,11 @@
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
     "release": "standard-version && git push --follow-tags",
     "release:next": "standard-version --prerelease next && git push --follow-tags origin dev && npm publish --tag next"
+  },
+  "standard-version": {
+    "scripts": {
+      "postbump": "npm run build && git add dist && git commit -m 'chore: new build'"
+    }
   },
   "dependencies": {
     "@heroicons/vue": "^1.0.2"
