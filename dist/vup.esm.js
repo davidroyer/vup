@@ -148,7 +148,7 @@ var script$1 = {
   props: {
     label: {
       type: String,
-      default: 'Button Text'
+      default: 'Default Text'
     }
   },
   components: {
