@@ -41,22 +41,21 @@ const baseConfig = {
       })
     ],
     replace: {
+      preventAssignment: true,
       'process.env.NODE_ENV': JSON.stringify('production')
     },
-    vue: {},
+    vue: {
+      // css: false,
+      preprocessStyles: true
+    },
     postVue: [
       resolve({
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue']
       }),
       // Process only `<style module>` blocks.
-      PostCSS({
-        modules: {
-          generateScopedName: '[local]___[hash:base64:5]'
-        },
-        include: /&module=.*\.css$/
-      }),
+      PostCSS(),
       // Process all `<style>` blocks except `<style module>`.
-      PostCSS({ include: /(?<!&module=.*)\.css$/ }),
+      // PostCSS({ include: /(?<!&module=.*)\.css$/ }),
       commonjs()
     ],
     babel: {
@@ -72,7 +71,8 @@ const baseConfig = {
 const external = [
   // list external dependencies, exactly the way it is written in the import statement.
   // eg. 'jquery'
-  'vue'
+  'vue',
+  'quill'
 ]
 
 // UMD/IIFE shared settings: output.globals
