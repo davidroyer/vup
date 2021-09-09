@@ -1,6 +1,6 @@
 {
   "name": "@droyer/vup",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "",
   "main": "dist/vup.ssr.js",
   "browser": "dist/vup.esm.js",
@@ -23,7 +23,7 @@
   },
   "standard-version": {
     "scripts": {
-      "postchangelog": "git add dist && git commit -m 'chore: new build'"
+      "postchangelog": "echo 'FIRED'"
     }
   },
   "dependencies": {
